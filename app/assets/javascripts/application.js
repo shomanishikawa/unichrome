@@ -17,16 +17,14 @@
 
 $(function(){
   
-  
   $("#color-field").spectrum({
     color: "#ffffff",
     flat: true,
     move: function(color) {
-            var hex = color.toHexString();
-            $("body").css({background:hex});
-            $("input#color-field").attr('value', hex);
+          var hex = color.toHexString();
+          $("body").css({background:hex});
+          $("input#color-field").attr('value', hex);
     }
   });
-  
   
 });
