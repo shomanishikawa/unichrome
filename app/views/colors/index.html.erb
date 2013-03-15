@@ -1,17 +1,10 @@
-<h1>UNICHROME</h1>
-
 <div id="color-container">
   <% @colors.each do |color| %>
       <div class="color-box" style="background:<%= color.hex %>;"></div>
-      <!-- 
-        <%= link_to 'Show', color %>
-        <%= link_to 'Edit', edit_color_path(color) %>
-        <%= link_to 'Destroy', color, method: :delete, data: { confirm: 'Are you sure?' } %>
-      -->
+      <!-- <%= link_to 'Destroy', color, method: :delete %> -->
   <% end %>
 </div>
 
-<br />
 
 <%= render 'form' %>
 

@@ -5,6 +5,8 @@
 #color-container{
   position:relative;
   width:500px;
+  margin:0 auto;
+  overflow:auto
 }
 
 .color-box{
@@ -14,9 +16,11 @@
   float:left;
 }
 
-.sp-button-container{
-  
+form#new_color{
+  text-align:center;
+  margin-top:50px;
 }
-.sp-container{
 
+.sp-container{
+  border:none;
 }

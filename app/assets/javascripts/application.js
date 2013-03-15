@@ -19,7 +19,13 @@ $(function(){
   
   
   $("#color-field").spectrum({
-    color: "#ffffff"
+    color: "#ffffff",
+    flat: true,
+    move: function(color) {
+            var hex = color.toHexString();
+            $("body").css({background:hex});
+            $("input#color-field").attr('value', hex);
+    }
   });
   
   
