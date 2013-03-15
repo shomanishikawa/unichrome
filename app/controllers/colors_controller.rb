@@ -47,7 +47,7 @@ class ColorsController < ApplicationController
 
     respond_to do |format|
       if @color.save
-        format.html { redirect_to colors_path }
+        format.html { redirect_to root_path }
         format.json { render json: @color, status: :created, location: @color }
       else
         format.html { render action: "new" }
