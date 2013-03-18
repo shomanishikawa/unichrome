@@ -6,10 +6,10 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # FOR LOCAL
-gem 'sqlite3'
+# gem 'sqlite3'
 
 # FOR HEROKU
-# gem 'pg'
+gem 'pg'
 
 
 # Gems used only for assets and not required
