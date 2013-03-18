@@ -19,6 +19,7 @@ $(function(){
   
   $("#color-field").spectrum({
     color: "#ffffff",
+    preferredFormat: "hex6",
     flat: true,
     move: function(color) {
           var hex = color.toHexString();
