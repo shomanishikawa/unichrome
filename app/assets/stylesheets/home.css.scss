@@ -26,8 +26,22 @@ footer#main{
   font-size: 8px;
   color:black;
   
+  iframe.twitter-share-button{
+    float:right;
+    margin-bottom:10px;
+    width:84px !important;
+  }
+  
+  #credits{
+    float:right;
+    clear:both;
+  }
   a{
     text-decoration:none;
     color:black;
+    
+    &:hover{
+      color:white;
+    }
   }
 }
