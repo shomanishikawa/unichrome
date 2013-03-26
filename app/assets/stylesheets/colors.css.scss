@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin box-sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #color-container{
   position:relative;
   width:500px;
@@ -14,6 +20,12 @@
   width:5px;
   height:5px;
   float:left;
+  
+  &#last{
+    @include box-sizing;
+    background:transparent;
+    border:1px solid black;
+  }
 }
 
 form#new_color{
@@ -29,6 +41,10 @@ form#new_color{
 .sp-container{
   background:none;
   border:none;
+}
+
+.sp-palette-container{
+  display:none;
 }
 
 .sp-picker-container{

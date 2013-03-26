@@ -35,13 +35,15 @@ footer#main{
   #credits{
     float:right;
     clear:both;
-  }
-  a{
-    text-decoration:none;
-    color:black;
     
-    &:hover{
-      color:white;
+    a{
+      text-decoration:none;
+      color:black;
+
+      &:hover{
+        color:white;
+      }
     }
   }
+  
 }
