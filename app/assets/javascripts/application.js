@@ -43,12 +43,12 @@ $(function(){
     $('form.new_color .actions input').unbind().click();
   });
 
-  
-
 });
 
 function setToLast(){
-  var lastColor = rgb2hex($('.sp-palette-row-selection span:first-child span').css('background-color'));
+  var lastColor = "rgb(255,255,255)";
+  if ($('.sp-palette-row-selection span').length > 0)
+    lastColor = rgb2hex($('.sp-palette-row-selection span:first-child span').css('background-color'));
   $("#color-field").spectrum("set", lastColor);
 }
 
