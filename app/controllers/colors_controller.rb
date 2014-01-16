@@ -27,7 +27,7 @@ class ColorsController < ApplicationController
   def last
     @color = Color.last
     respond_to do |format|
-      format.json { render json: @color }
+      format.json { render :json => @color , :only => [:hex] }
     end
   end
 
