@@ -43,7 +43,7 @@ class ColorsController < ApplicationController
   # POST /colors
   # POST /colors.json
   def create
-    @color = Color.new(params[:color])
+    @color = Color.new(color_params)
 
     respond_to do |format|
       if @color.save
@@ -83,4 +83,11 @@ class ColorsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+  
+  def color_params
+    params.require(:color).permit(:hex)
+  end
+  
 end
