@@ -23,6 +23,13 @@ class ColorsController < ApplicationController
       format.json { render json: @color }
     end
   end
+  
+  def last
+    @color = Color.last
+    respond_to do |format|
+      format.json { render json: @color }
+    end
+  end
 
   # GET /colors/new
   # GET /colors/new.json

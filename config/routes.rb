@@ -1,5 +1,5 @@
 Unichrome::Application.routes.draw do
-  resources :colors
+  
 
   get "home/index"
 
@@ -60,6 +60,11 @@ Unichrome::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   
+  resources :colors
+  
   root :to => 'colors#index'
+  
+  get 'last', to: 'colors#last', as: :last
+ 
   
 end
