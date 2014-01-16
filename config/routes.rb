@@ -64,7 +64,7 @@ Unichrome::Application.routes.draw do
   
   root :to => 'colors#index'
   
-  get 'last', to: 'colors#last', as: :last
+  get 'last', to: 'colors#last', as: :last, :defaults => { :format => 'json' }
  
   
 end
